@@ -1,3 +1,4 @@
+// passport file
 const JwtStrategy = require("passport-jwt/lib").Strategy;
 const ExtractJwt = require("passport-jwt/lib").ExtractJwt;
 const User = require("../models/user");
