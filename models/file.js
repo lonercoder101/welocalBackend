@@ -9,24 +9,41 @@ const postSchema = new schema(
       ref: "user",
       required: true,
     },
-    invoice: {
+    price: {
       type: String,
-      unique: true,
-      required: true,
+      required: false,
     },
-    financial: {
-      type: schema.Types.ObjectId,
-      ref: "user",
-      required: true,
+    jobType: {
+        type: String,
+        required: false,
+    },
+    description: {
+        type: String,
+        required: false,
     },
     status: {
-      type: String,
-      required: true,
+        type: String,
+        required: false,
     },
-    userPdf: {
-      type: schema.Types.Mixed,
-      required: true,
-    },
+      applierId: {
+          type: schema.Types.ObjectId,
+          ref: "user",
+          required: false,
+      },
+      biddingPrice: {
+          type: String,
+          required: false,
+      },
+
+    // financial: {
+    //   type: schema.Types.ObjectId,
+    //   ref: "user",
+    //   required: true,
+    // },
+    // userPdf: {
+    //   type: schema.Types.Mixed,
+    //   required: true,
+    // },
   },
   { timestamps: true }
 );

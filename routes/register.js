@@ -5,12 +5,13 @@ const router = express.Router();
 
 router.post("/", (req, res) => {
   console.log(req.body);
-  const { name, userName, password, type } = req.body;
+  const { name, userName, password, type, jobType } = req.body;
   const newUser = new User({
     name,
     userName,
     password,
     type,
+    jobType
   });
 
   newUser

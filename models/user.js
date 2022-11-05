@@ -19,10 +19,14 @@ const userSchema = new schema(
       type: String,
       required: true,
     },
-    type: {
-      type: String,
-      required: true,
-    },
+      type: {
+          type: String,
+          required: true,
+      },
+      jobType: {
+          type: String,
+          required: false,
+      },
   },
   { timestamps: true }
 );
