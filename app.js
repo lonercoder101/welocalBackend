@@ -1,3 +1,4 @@
+// for deployment stuff and boiler plate
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
